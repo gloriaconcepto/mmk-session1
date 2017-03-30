@@ -27,6 +27,23 @@ class FactorialTest extends FreeSpec with Matchers {
       Factorial.nonTailRecursiveFactorial(5) shouldBe 120
     }
 
+    "6 factorial should be 720" in {
+      Factorial.nonTailRecursiveFactorial(6) shouldBe 720
+    }
+
+    "7 factorial should be 5040" in {
+      Factorial.nonTailRecursiveFactorial(7) shouldBe 5040
+    }
+    "8 factorial should be 40320" in {
+      Factorial.nonTailRecursiveFactorial(8) shouldBe 40320
+    }
+    "9 factorial should be 362880" in {
+      Factorial.nonTailRecursiveFactorial(9) shouldBe 362880
+    }
+    "10 factorial should be 3628800" in {
+      Factorial.nonTailRecursiveFactorial(10) shouldBe 3628800
+    }
+
   }
 
   "Write a factorial function that is tail recursive" - {
@@ -47,7 +64,23 @@ class FactorialTest extends FreeSpec with Matchers {
     }
 
     "5 factorial should be 120" in {
-      Factorial.tailRecursiveFactorial(5) shouldBe 120
+      Factorial.tailRecursiveFactorial(5)shouldBe 120
+    }
+    "6 factorial should be 720" in {
+      Factorial.tailRecursiveFactorial(6)shouldBe 720
+    }
+    "7 factorial should be 5040" in {
+      Factorial.tailRecursiveFactorial(7)shouldBe 5040
+    }
+    "8 factorial should be 40320" in {
+      Factorial.tailRecursiveFactorial(8)shouldBe 40320
+    }
+
+    "9 factorial should be 362880" in {
+      Factorial.tailRecursiveFactorial(9)shouldBe 362880
+    }
+    "10 factorial should be 3628800" in {
+      Factorial.tailRecursiveFactorial(10)shouldBe 3628800
     }
 
   }

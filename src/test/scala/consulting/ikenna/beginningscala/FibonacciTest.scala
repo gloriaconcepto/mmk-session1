@@ -16,31 +16,63 @@ class FibonacciTest extends FreeSpec with Matchers{
 
   "Calculate Fibonacci numbers" - {
     "0" in {
-      Fibonacci.fibonacciNumbers(0) shouldBe 0
+      Fibonacci.nonTailRecursiveFibonacci(0) shouldBe 0
     }
 
     "1" in {
-      Fibonacci.fibonacciNumbers(1) shouldBe 1
+      Fibonacci.nonTailRecursiveFibonacci(1) shouldBe 1
     }
 
     "2" in {
-      Fibonacci.fibonacciNumbers(2) shouldBe 1
+      Fibonacci.nonTailRecursiveFibonacci(2) shouldBe 1
     }
 
     "3" in {
-      Fibonacci.fibonacciNumbers(3) shouldBe 2
+      Fibonacci.nonTailRecursiveFibonacci(3) shouldBe 2
     }
 
     "4" in {
-      Fibonacci.fibonacciNumbers(4) shouldBe 3
+      Fibonacci.nonTailRecursiveFibonacci(4) shouldBe 3
     }
 
     "5" in {
-      Fibonacci.fibonacciNumbers(5) shouldBe 5
+      Fibonacci.nonTailRecursiveFibonacci(5) shouldBe 5
     }
 
     "6" in {
-      Fibonacci.fibonacciNumbers(6) shouldBe 8
+      Fibonacci.nonTailRecursiveFibonacci(6) shouldBe 8
+    }
+
+
+
+  }
+  "Calculate Fibonacci numbers using tail recursive approach" - {
+    "0" in {
+      Fibonacci.tailRecursiveFibonacci(0) shouldBe 0
+    }
+
+    "1" in {
+      Fibonacci.tailRecursiveFibonacci(1) shouldBe 1
+    }
+
+    "2" in {
+      Fibonacci.tailRecursiveFibonacci(2) shouldBe 1
+    }
+
+    "3" in {
+      Fibonacci.tailRecursiveFibonacci(3) shouldBe 2
+    }
+
+    "4" in {
+      Fibonacci.tailRecursiveFibonacci(4) shouldBe 3
+    }
+
+    "5" in {
+      Fibonacci.tailRecursiveFibonacci(5) shouldBe 5
+    }
+
+    "6" in {
+      Fibonacci.tailRecursiveFibonacci(6) shouldBe 8
     }
   }
 
